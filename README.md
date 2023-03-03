@@ -6,6 +6,4 @@ Guess the word to win!
 
 - `git clone https://github.com/webmastersmith/wordle.git`
 - cd into directory
-  - `npm i`
-  - `npm run build`
-  - `npm run preview`
+  - `npm i && npm run build && npm run preview`
