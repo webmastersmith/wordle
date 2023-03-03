@@ -1,0 +1,27 @@
+.keyboard {
+  --gap: 0.5rem;
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--gap);
+  margin-top: 3rem;
+  width: 60%;
+  place-items: center;
+
+  & > .row {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--gap);
+    width: min-content;
+
+    & > .cell {
+      border: 1px solid black;
+      // width: 70px;
+      // height: 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 5px;
+      font-weight: bold;
+      padding: 1rem;
+    }
+  }
+}

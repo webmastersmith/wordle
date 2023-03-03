@@ -1,0 +1,37 @@
+.wrapper {
+  --gap: 0.5rem;
+  --size: 75px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+
+  & > .grid {
+    width: calc(var(--size) * 5 + (var(--gap) * 5));
+    display: inline-grid;
+    gap: var(--gap);
+    grid-auto-flow: row;
+    // margin-bottom: var(--gap);
+
+    & > .row {
+      display: grid;
+      grid-auto-flow: column;
+      gap: var(--gap);
+
+      & > .cell {
+        width: var(--size);
+        height: var(--size);
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+      }
+    }
+  }
+
+  & > button {
+    font-size: 25px;
+    padding: 1rem 2rem;
+  }
+}
